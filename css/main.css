@@ -1,11 +1,13 @@
+/*i am guilty for not totally organizing my css, also my page somehow seems to be exceding 1280px, 
+i know because my website has a bottom scrolling bar, i must have styled one of my selectors
+more than necessary, i just do not know which one yet*/
 /*Browser default setting to zero*/
-body {
+html, body {
     margin: 0;
     padding: 0;
     border:0;
-    font-size: 16px;
     font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(99, 175, 13);
   
 }
 /*setting page container */
@@ -13,43 +15,61 @@ body {
     width: 1280px;
     margin: 0px auto;
     background-color: #ffffff;
+    overflow: hidden;
+
 }
 
 .hidden {
     display:none;
 }
 .paragraph-break{
-    width: 1070px;
+    width: 1150px;
     text-align: center;
-    
-
 }
-/* styling the section where you find the company logo, profile picture and 
-the login, sign up and profile links*/
+
+.paragraph-breakway{
+    margin-top: 100px;
+    width: 1150px;
+    text-align: center;
+}
+
+.paragraph-breakway2{
+    margin-top: 100px;
+    width: 1150px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* styling the section where you find the company logo, profile picture*/
+
+header {
+    position: fixed;
+    background-color: #000000;
+    z-index: 100;
+  }
 
 #logo-section{
     background-color: rgb(255, 255, 255);
     width: 1280px;
-    height: 150px;
-    display: block;
+    height: 70px;
     
-    
- 
 }
 
 
 #top-logo {
+    
     margin-left: 15px;
    
 }
 
 .profile-circle {
     
-    width: 100px; 
-    height: 100px;
+    width: 40px; 
+    height: 40px;
     border-radius: 50%; 
     overflow: hidden;
-    margin:-120px 65px 40px 1100px;
+    margin:-70px 65px 40px 1100px;
   }
   
   .profile-picture {
@@ -60,24 +80,21 @@ the login, sign up and profile links*/
   
 
 
-
+/* styling the section where you find the login, sign up and profile links*/
 
 #top-menu1 {
     
-    margin-left: 950px;
-    margin-top: -450px;
-    display: inline;
     
-   
-
+    margin-top: -250px;
+    display: inline;
 }
 
 #top-menu1 ul {
     
     list-style-type: none;
-    margin-left: 850px;
+    margin-left: 650px;
     margin-top: -55px;
-    padding-right:1px;
+    
     
 }
 
@@ -95,29 +112,28 @@ the login, sign up and profile links*/
 
 #top-menu1 ul li a:hover {
     text-decoration: underline;
-    color:rgb(94, 4, 4);
+    color:rgb(196, 22, 22);
   }
   
   #top-menu2 {
     
     width: 1280px;
-    height: 100px;
-    background-color: rgb(226, 130, 13);
-    display: block;
-    
-   
-
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    display: inline-flex;
 }
-
+/* styling the section where you find the */
 #top-menu2 ul {
     list-style-type: none;
-    margin-left: 210px;
+    margin-left: 110px;
+    margin-top: -10px;
+   
     
 }
 
 #top-menu2 ul li  {
     display:inline;
-    margin-left: 50px;
+    margin-left: 100px;
 }
 
 
@@ -128,7 +144,7 @@ the login, sign up and profile links*/
 
 #top-menu2 ul li a:hover {
     text-decoration: underline;
-    color:rgb(94, 4, 4);
+    color:rgb(255, 255, 255);
   }
   
 
@@ -143,10 +159,79 @@ the login, sign up and profile links*/
     color: rgb(255, 255, 255);
   }
 
+
+/*Table styling for home / index page gallery showcase */
+
+#gallery-section{
+    width: 1280px;
+    height: 4800px;
+    background-color: rgb(88, 85, 85);
+
+}
+  .gallery-table{
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+  
+
+  .gallery-table p {
+    color: #000000;
+
+  }
+
+  .more-items{
+    margin-left: 581px ;
+    margin-bottom: 54px;
+    
+
+  }
+
+  .more-items a{
+    font-size: 25px;
+    text-decoration: none;
+    color:rgb(71, 71, 71);
+  }
+
+  .more-items a:hover{
+    
+    text-decoration: none;
+    color:rgb(161, 20, 20);
+  }
+
+  #social-lead {
+    background-color: black;
+    width: 650px;
+    height:824px;
+    margin-top: -400px;
+  }
+
+  .social-lead{
+    color: #ffffff;
+    width: 550px;
+    height:527px;
+    font-size: 35px;
+    margin-top: -900px;
+  }
+
+  .social-holder{
+    width: 1280px;
+    height: 1000px;
+  }
+ 
 /*Footer Styling*/
+
+#footer-box{
+    background-color: rgb(155, 105, 105);
+    color: #ffffff;
+    margin-top: 100px;
+}
 
 #footer-logo{
     margin-left:100px;
+}
+#footer-social_logo{
+    margin-left: 1065px;
+    padding-right: 50px;
 }
 
 #footer-menu{
@@ -198,11 +283,59 @@ the login, sign up and profile links*/
     font-size: 12px;
 }
       .trademark{
-        width: 1150px;
+        font-size: 15px;
+        font-weight: lighter;
+        width: 1000px;
         height: 205px;
-        text-align: center;
+        text-align: left;
+        margin-left: 65px;
+        margin-top: 100px;
       }
 
 
 
-     
+
+
+    
+    .carousel-container1 {
+        width: 1280px;
+        height: 600px;
+        overflow: hidden;
+        position: relative;
+    }
+   
+    .carousel1 {
+        display: flex;
+        width: 1500px; 
+        animation: slider1 70s linear infinite;
+        max-width: 70%;
+        filter:contrast(20%);
+        filter: blur(5px);
+    }
+    
+   
+    @keyframes slider1 {
+        0% {
+            transform: translateX(0);
+        }
+
+        20% {
+            transform: translateX(-1280px);
+        }
+
+        40% {
+            transform: translateX(-2560px);
+        }
+
+        80% {
+            transform: translateX(-3840px);
+        }
+       
+        100% {
+            transform: translateX(-5120px);
+        }
+    }
+    
+
+   
+    
