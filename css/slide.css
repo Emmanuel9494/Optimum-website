@@ -1,0 +1,103 @@
+
+/*i am guilty for not totally organizing my css, also my page somehow seems to be exceding 1280px, 
+i know because my website has a bottom scrolling bar, i must have styled one of my selectors
+more than necessary, i just do not know which one yet*/
+.main_img-container {
+    width: 1280px;
+    
+}
+
+.main_slider-wrapper{
+
+    position: relative;
+    width: 1280px;
+    
+}
+
+.main_slider {
+    display:flex;
+    width: 1280px;
+    overflow: hidden;
+   
+  
+}
+
+
+
+.main_slider-nav {
+
+  display: block;
+  column-gap: 10px;
+   position: absolute;
+   bottom: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+}
+
+.main_slider-nav img{
+    width: 26px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    transition: opacity ease 250ms;
+}
+
+
+input{
+    width: 26px;
+    height: 31px;
+}
+
+
+.event_img-container {
+    width: 115px;
+    height: 448px;
+   
+}
+
+.event_slider-wrapper{
+
+    position: relative;
+    width: 1280px;
+    margin-left: 65px;
+    margin-top: -500px;
+}
+
+.event_slider {
+    display:flex;
+    width: 1150px;
+    overflow: hidden;
+   
+  
+}
+
+
+
+.event_slider-nav {
+
+  display: block;
+  column-gap: 10px;
+   position: absolute;
+   bottom: 50px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1;
+}
+
+.event_slider-nav img{
+    width: 26px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    opacity: 50%;
+    transition: opacity ease 250ms;
+}
+
+
+  .background-image{
+    width: 1280px;
+    height: 1256px;
+    margin-bottom: -650px;
+  }

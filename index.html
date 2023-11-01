@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/maiin.css" rel="stylesheet" type="text/css"> <!--to activate css remove one letter i-->
+    <link href="css/sliide.css" rel="stylesheet" type="text/css"><!--to activate css remove one letter i-->
     <link rel="icon" href="image/otm-favicon.ico" type="image/x-icon">
     <title>Optimum Gallery</title>
     
@@ -16,18 +17,18 @@
         <section id="logo-section">
             <h2 class="hidden">optimum logo</h2>
             <div id="top-logo">
-                <a href="index.html">
-        <img  src="image/optimum-logo.svg" alt="optimum company logo" width="251" height="131">
+    <a href="index.html">
+        <img  src="image/optimum-logo.svg" alt="optimum company logo" width="151" height="50">
     </a>
     </div>
-
+</section>
         <div class="profile-circle">
             <a href="#">
             <img src="image/candle1150448.jpg" alt="user profile picture"  class="profile-picture">
         </a>
         </div>
-    </section>
-
+    
+    
     <div id="top-menu1">
         <ul>
             <li><a href="#">LOGIN</a></li>
@@ -55,23 +56,37 @@
 
     <main>
 <!-- Top section 5 images as the background (1280 x 600)-->
-        <section>
-<h2 class="hidden"> optimum gallery top selling Image slides</h2>
-
-            <div>
+        <section class="main_img-container">
+             <h2 class="hidden"> optimum gallery top selling Image slides</h2>
+        
+            <div class="main_slider-wrapper" >
+                <div  class="main_slider">
         
                   <img src="image/faces1280600.jpg" alt="Image of faces on a jacket">
 
                   <img src="image/lightbar1280600.jpg" alt="Image of light bars">
               
-                  <img src="image/redwheel1280600.jpg" alt="Image of a black and red wheel">
+                  <img  src="image/redwheel1280600.jpg" alt="Image of a black and red wheel">
              
                   <img src="image/moutain1280600.jpg" alt="Image of a mountain">
             
-                  <img src="image/lava1280600.jpg" alt="Image of a flowing lava">
+                  <img  src="image/lava1280600.jpg" alt="Image of a flowing lava">
 
                  </div>
+
+                 <div class="main_slider-nav">
+                    <input type="radio" name="slider" >
+                    <input type="radio" name="slider" >
+                    <input type="radio" name="slider" >
+                    <input type="radio" name="slider">
+                    <input type="radio" name="slider">
+
+                 </div>
+                </div>
+              
+                
         </section>
+
         <p class="paragraph-break">Welcome to our online art gallery! Step into a world where creativity knows no bounds.
              Discover a diverse collection of artworks that span genres, styles, and emotions.</p>
 
@@ -79,21 +94,29 @@
         <section>
             <h2 class="hidden">optimum gallery events adverts </h2>
 
-            <div>
+            <div class="carousel-container1">
+                <div  class="carousel1">
         
-                <img src="image/star-pattern.jpg" alt="image of a star pattern">
+                <img class="section-opacity" src="image/star-pattern.jpg" alt="image of a star pattern">
 
-                <img src="image/man-and-stars.jpg" alt="image of a man under the stars">
+                <img class="section-opacity" src="image/man-and-stars.jpg" alt="image of a man under the stars">
             
-                <img src="image/fire-slow-spiral.jpg" alt="Image of fire burning in circle">
+                <img class="section-opacity" src="image/fire-slow-spiral.jpg" alt="Image of fire burning in circle">
            
-                <img src="image/splash-paint-on-model.jpg" alt="Image of color exposure on model">
+                <img class="section-opacity" src="image/splash-paint-on-model.jpg" alt="Image of color exposure on model">
           
-                <img src="image/white-flower.jpg" alt="Image of a white flower">
+                <img class="section-opacity" src="image/white-flower.jpg" alt="Image of a white flower">
+             </div>
 
-               </div>
+         </div>
+        </section>
 
-            <div>
+
+            <section class="event_img-container">
+                <h2 class="hidden">optimum gallery events showcase</h2>
+                <div class="event_slider-wrapper">
+            <div class="event_slider">
+
                 <img src="image/bluemorh1150448.jpg" alt="Image of a blue tiny boxes">
 
                 <img src="image/candle1150448.jpg" alt="Image of burning candles">
@@ -105,22 +128,37 @@
                 <img src="image/treesun1150448.jpg" alt="Image of a tree in a sunset background">
 
             </div>
-        </section>    
+
+            <div class="event_slider-nav">
+                <input type="radio" name="slider" >
+                <input type="radio" name="slider" >
+                <input type="radio" name="slider" >
+                <input type="radio" name="slider">
+                <input type="radio" name="slider">
+
+             </div>
+            </div>
+        </section>
+            
     
 <!-- Second paragraph-->
-<p class="paragraph-break"> From vivid abstracts to evocative landscapes, each piece tells a unique story.
+<p class="paragraph-breakway "> From vivid abstracts to evocative landscapes, each piece tells a unique story.
      We invite you to immerse yourself in this artistic journey, exploring the beauty
       and expression that art brings to life. Enjoy the visual feast and find inspiration
        in every stroke and color.</p>
  
 
       <!-- Section for random art display with price and cart icon--> 
-         <section>
+         <section id="gallery-section">
+            
             <h2 class="hidden">A quick glance of different arts from diffrent cartegories </h2>
+            <table class="gallery-table">
+            <tr>
+                <td>
             <div>
                 <img src="image/bluemorh300600.jpg" alt="image of A blue liquid morh">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>BLUE DREAM</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -128,11 +166,14 @@
 
                 </div>
             </div>
+        </td>
 
+        <td class="mid-table">
+          
             <div>
                 <img src="image/blackgold300300.jpg" alt="image of a Black and gold picture of a girl's face">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>DARK SIGHT</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -140,11 +181,14 @@
 
                 </div>
             </div>
+        </td>
 
+        <td>
+           
             <div>
                 <img src="image/card300600.jpg" alt="image of playing cards">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>PLAY THE HAND</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -152,11 +196,14 @@
 
                 </div>
             </div>
-
+         </td>
+        </tr>
+<tr>
+         <td>
             <div>
                 <img src="image/colortree300300.jpg" alt="image of a beautiful tree">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>RED SPROUTS</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -164,11 +211,13 @@
 
                 </div>
             </div>
+         </td>
 
+         <td>
             <div>
                 <img src="image/citylight300600.jpg" alt="image of city lights">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>CITY LIGHTS</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -176,11 +225,13 @@
 
                 </div>
             </div>
+         </td>
 
+         <td>
             <div>
                 <img src="image/faces300300.jpg" alt="image of A jacket with 3d faces">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>FACE WITHIN</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -188,11 +239,15 @@
 
                 </div>
             </div>
+         </td>
+        </tr>
 
+        <tr>
+          <td>
             <div>
                 <img src="image/colorspread-300600.jpg" alt="image of liquid paint spread">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>TOWN PAINT</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -201,10 +256,13 @@
                 </div>
             </div>
 
+          </td>
+
+          <td>
             <div>
                 <img src="image/fire300300.jpg" alt="image of fire">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>BURN OR RUN</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -212,11 +270,14 @@
 
                 </div>
             </div>
+          </td>
 
+          <td>
+             
             <div>
                 <img src="image/cyberorange300600.jpg" alt="image of orange lights with girl posing">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>FUNK CLUB</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -224,35 +285,46 @@
 
                 </div>
             </div>
+          </td>
+          
+        </tr>
 
-            <div>
-                <img src="image/girlwindow300300.jpg" alt="image of girl staying by window">
+        <tr>
+            <td>
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/girlwindow300300.jpg" alt="image of girl staying by window">
+                    <div>
+                        <p>UNCHANT WOMAN</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+    
+            </td>
 
-            <div>
-                <img src="image/flower300600.jpg" alt="image of a flower">
+            <td>
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/flower300600.jpg" alt="image of a flower">
+                    <div>
+                        <p>RED POISIN</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+            </td>
 
+            <td>
+               
             <div>
                 <img src="image/manred300300.jpg" alt="image of a man in a red room">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>MEN IN RED</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -260,35 +332,44 @@
 
                 </div>
             </div>
+            </td>
+        </tr>
 
-            <div>
-                <img src="image/lava300600.jpg" alt="image of a paint looking red hot lava">
+        <tr>
+            <td>
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/lava300600.jpg" alt="image of a paint looking red hot lava">
+                    <div>
+                        <p>BUTTER NO-FLY</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+            </td>
 
-            <div>
-                <img src="image/oilcolorflow300300.jpg" alt="image of an oily paint flowing">
+            <td>
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/oilcolorflow300300.jpg" alt="image of an oily paint flowing">
+                    <div>
+                        <p>CYBUG LAVA</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+            </td>
 
+            <td>
+             
             <div>
                 <img src="image/longtree300600.jpg" alt="image of a tall tree">
                 <div>
-                    <p>FAR CRY</p>
+                    <p>TILL DARK</p>
                     <p>Sunset over the tranquil,
                         rippling ocean waves</p>
                         <p>CAD $1,000</p>
@@ -296,65 +377,80 @@
 
                 </div>
             </div>
+            </td>
+        </tr>
 
-            <div>
-                <img src="image/redoil300300.jpg" alt="image of a red colour paint oil">
+        <tr>
+            <td>
+ 
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/redoil300300.jpg" alt="image of a red colour paint oil">
+                    <div>
+                        <p>LAVA BADA</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+            </td>
 
-            <div>
-                <img src="image/mount300600.jpg" alt="image of a mountain">
+            <td>
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/mount300600.jpg" alt="image of a mountain">
+                    <div>
+                        <p>ICY TOPS</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
+            </td>
 
-            <div>
-                <img src="image/redwood300300.jpg" alt="image of a red wood">
+            <td>
+           
                 <div>
-                    <p>FAR CRY</p>
-                    <p>Sunset over the tranquil,
-                        rippling ocean waves</p>
-                        <p>CAD $1,000</p>
-                        <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
-
+                    <img src="image/redwood300300.jpg" alt="image of a red wood">
+                    <div>
+                        <p>RED BEHIND</p>
+                        <p>Sunset over the tranquil,
+                            rippling ocean waves</p>
+                            <p>CAD $1,000</p>
+                            <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+    
+                    </div>
                 </div>
-            </div>
-
-            <p><a href="#">More...</a></p>
+            </td>
+        </tr>
+       
+        </table>
+        <p class="more-items"><a href="#">More...</a></p>
+ 
          </section>
-         <p>Join us in this artistic journey as we celebrate the power of visuals, 
+         <p class="paragraph-breakway2 ">Join us in this artistic journey as we celebrate the power of visuals, 
             one post at a time. Follow, like, and share your love for art! </p>
 
-            <section>
+            <div>
                 <h2 class="hidden">optimum gallery social media </h2>
-                <img src="image/optimum-social-media.jpg" alt="image of a face painted with colors">
-                <div>
-                    <p> Follow us on our social media platforms for a visual feast that extends 
-                        beyond the confines of this digital space. Discover daily doses of artistic 
-                        inspiration, artist highlights, behind-the-scenes glimpses, and engaging 
-                        art-related content. </p>
-
-                        <p><a href="#">Follow</a></p>
-                </div>
-                <div>
+                
+                <img class="social-holder" src="image/optimum-social-media.jpg" alt="image of a face painted with colors">
+            </div>
+            <div>
+                <p class="social-lead" > Follow us on our social media platforms for a visual feast that extends 
+                    beyond the confines of this digital space. Discover daily doses of artistic 
+                    inspiration, artist highlights, behind-the-scenes glimpses, and engaging 
+                    art-related content. </p>   
+            </div>
+                
+                <div id="social-lead-img">
                     <img src="image/Instagram_Glyph_White.svg" alt="instagram logo" width="50" height="50">
                 </div>
-            </section>
+            
     </main>
-    <footer>
+    <footer id="footer-box">
         <h3 class="hidden">optimum gallery footer navigation</h3>
         <div id="footer-logo">
             <img src="image/optimum-logo.svg" alt="optimum company logo" width="300" height="400">
@@ -367,15 +463,16 @@
         </ul>
     </nav>
     
-        <p>123 Main St
+        <p class="paragraph-breakway ">123 Main St
             Apt 4B London, ON. M1A 1A1 Canada info@email.com +1 123-456-7890 +1 234-567-8901 </p>
-            <p>An online art gallery showcasing diverse creations, 
+            <p class="paragraph-breakway ">An online art gallery showcasing diverse creations, 
                 fostering creativity, and connecting artists with a global audience
                  in an immersive digital space.</p>
                 
-    <div>
+                
+    <div id="footer-social_logo">
         <img src="image/Instagram_Glyph_White.svg" alt="instagram logo" width="50" height="50">
-        <img src="image/Facebook_Logo_Secondary.svg" alt="facebook logo" width="50" height="50">
+        <img src="image/Facebook_Logo_Secondary.svg" alt="facebook logo" width="60" height="60">
     </div>
     <hr>
     <p class="trademark">All prices and services on this website and our reservation system are based on conditions at the time of publishing and are subject to change. Please call to confirm services, availability and pricing.
@@ -385,3 +482,224 @@
 </div>
 </body>
 </html>
+
+ <!-- Section for random art display with price and cart icon the original code, will try and use a table
+    to make a grid like effect. 
+ <section>
+    <h2 class="hidden">A quick glance of different arts from diffrent cartegories </h2>
+    <div>
+        <img src="image/bluemorh300600.jpg" alt="image of A blue liquid morh">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/blackgold300300.jpg" alt="image of a Black and gold picture of a girl's face">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/card300600.jpg" alt="image of playing cards">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/colortree300300.jpg" alt="image of a beautiful tree">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/citylight300600.jpg" alt="image of city lights">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/faces300300.jpg" alt="image of A jacket with 3d faces">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/colorspread-300600.jpg" alt="image of liquid paint spread">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/fire300300.jpg" alt="image of fire">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/cyberorange300600.jpg" alt="image of orange lights with girl posing">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/girlwindow300300.jpg" alt="image of girl staying by window">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/flower300600.jpg" alt="image of a flower">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/manred300300.jpg" alt="image of a man in a red room">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/lava300600.jpg" alt="image of a paint looking red hot lava">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/oilcolorflow300300.jpg" alt="image of an oily paint flowing">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/longtree300600.jpg" alt="image of a tall tree">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/redoil300300.jpg" alt="image of a red colour paint oil">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/mount300600.jpg" alt="image of a mountain">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+
+    <div>
+        <img src="image/redwood300300.jpg" alt="image of a red wood">
+        <div>
+            <p>FAR CRY</p>
+            <p>Sunset over the tranquil,
+                rippling ocean waves</p>
+                <p>CAD $1,000</p>
+                <img src="image/shopping_cart.svg" alt="optimum company logo" width="25" height="26">
+
+        </div>
+    </div>
+    -->
